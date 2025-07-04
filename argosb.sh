@@ -7,25 +7,31 @@ export LANG=en_US.UTF-8
 #[ -z "${tupt+x}" ] || tup=yes
 #[ "$vlp" = yes ] || [ "$vmp" = yes ] || [ "$hyp" = yes ] || [ "$tup" = yes ] || { echo "提示：使用此脚本时，请在脚本前至少设置一个协议变量哦，再见！"; exit; }
 #fi
-#export uuid=${uuid:-''}
-#export port_vl_re=${vlpt:-''}
-#export port_vm_ws=${vmpt:-''}
-#export port_hy2=${hypt:-''}
-#export port_tu=${tupt:-''}
-#export ym_vl_re=${reym:-''}
-#export argo=${argo:-''}
-#export ARGO_DOMAIN=${agn:-''}
-#export ARGO_AUTH=${agk:-''}
-#export ipsw=${ip:-''}
+vlpt="29501"
+vmpt="29502"
+hypt="29503"
+tupt="29504"
 uuid="ced9e5fa-1fba-4248-84c2-6b0536d9cae5"
-port_vl_re="29501"
-port_vm_ws="29502"
-port_hy2="29503"
-port_tu="29504"
 argo="y"
-ARGO_DOMAIN="idx.szainp.com"
-ARGO_AUTH="eyJhIjoiMTNlOTljMTdlYjM1NWIyM2VhNzBlZWUzNjU2NmNhZjEiLCJ0IjoiODYwZWJmOWMtNzZjNS00OTdkLTk0NjYtZjk2ZjUwMjMwMTMxIiwicyI6Ik5qUTFaamxpTVRRdFlURTFOUzAwWm1RNUxXRTRZell0TlRCak4yWXlNREl4TkRNdyJ9"
-ipsw=''
+agn="idx.szainp.com"
+agk="eyJhIjoiMTNlOTljMTdlYjM1NWIyM2VhNzBlZWUzNjU2NmNhZjEiLCJ0IjoiODYwZWJmOWMtNzZjNS00OTdkLTk0NjYtZjk2ZjUwMjMwMTMxIiwicyI6Ik5qUTFaamxpTVRRdFlURTFOUzAwWm1RNUxXRTRZell0TlRCak4yWXlNREl4TkRNdyJ9"
+
+export uuid=${uuid:-''}
+export port_vl_re=${vlpt:-''}
+export port_vm_ws=${vmpt:-''}
+export port_hy2=${hypt:-''}
+export port_tu=${tupt:-''}
+export ym_vl_re=${reym:-''}
+export argo=${argo:-''}
+export ARGO_DOMAIN=${agn:-''}
+export ARGO_AUTH=${agk:-''}
+export ipsw=${ip:-''}
+
+#port_vl_re="29501"
+#port_vm_ws="29502"
+#port_hy2="29503"
+#port_tu="29504"
+#ipsw=''
 showmode(){
 echo "显示节点信息：agsb或者脚本 list"
 echo "双栈VPS显示IPv4节点配置：ip=4 agsb或者脚本 list"
