@@ -23,7 +23,7 @@ port_vm_ws="29502"
 port_hy2="29503"
 port_tu="29504"
 argo="y"
-ARGO_DOMAIN="idz.szainp.com"
+ARGO_DOMAIN="idx.szainp.com"
 ARGO_AUTH="eyJhIjoiMTNlOTljMTdlYjM1NWIyM2VhNzBlZWUzNjU2NmNhZjEiLCJ0IjoiODYwZWJmOWMtNzZjNS00OTdkLTk0NjYtZjk2ZjUwMjMwMTMxIiwicyI6Ik5qUTFaamxpTVRRdFlURTFOUzAwWm1RNUxXRTRZell0TlRCak4yWXlNREl4TkRNdyJ9"
 ipsw=''
 showmode(){
